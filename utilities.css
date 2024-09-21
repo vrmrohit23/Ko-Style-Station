@@ -1,0 +1,19 @@
+.section-p1{
+  padding: 40px 80px;
+}
+.section-m1{
+  margin: 40px 0;
+}
+.flex{
+  display: flex;
+}
+@media (max-width:790px){
+  .section-p1{
+    padding: 40px 40px;
+  }
+}
+@media (max-width:500px){
+  .section-p1{
+    padding: 20px;
+  }
+}

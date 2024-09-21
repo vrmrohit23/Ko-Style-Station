@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Buy Good Quality Clothes for Men and Women</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="utilities.css" rel="stylesheet" type="text/css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images-favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images-favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <section id="header">
+    <div class="flex logoinputcont">
+
+      <div id="navbarandinputcont">
+        <div id="mobile">
+          <!-- <a href="cart.html"><img src="normal images/carts.png" alt="cart" ></a> -->
+          <i id="menubar" class="fa-solid fa-bars"></i>
+        </div>
+        <a href="index.html"><img src="logo images/ko-high-resolution-logo-transparent.png" class="logo" alt="logo"></a>
+        <!-- <div id="forspace"></div> -->
+        <ul id="navbar">
+          <i id="closemenubar" class="fa-solid fa-x"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li> <a href="login.html" id="login"><i class="fa-regular fa-user" style="margin-right: 4px;"></i>Login</a>
+          </li>
+
+          <li><a class="active" href="cart.html"><img src="https://cdn-icons-png.flaticon.com/128/891/891462.png"
+                alt="cart" style="width: 30px; height: 25px;"></a>
+          </li>
+        </ul>
+      </div>
+      <div id="topsearchbar">
+
+        <input type="text" class="search" placeholder="Search for clothes">
+        <button class="btn">Search</button>
+      </div>
+
+
+
+    </div>
+  </section>
+  <section id="blog-hero" class="cart-banner">
+  </section>
+  <section id="cart" class="section-p1">
+    <table width="100%">
+      <thead>
+        <tr>
+          <th>REMOVE</th>
+          <th>IMAGE</th>
+          <th>PRODUCT</th>
+          <th>PRICE</th>
+          <th>QUANTITY</th>
+          <th>SUBTOTAL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div><i class="fa-regular fa-circle-xmark" style="color: #1e5cc8;cursor: pointer;"></i></div>
+          </td>
+          <td>
+            <div><img src="img/products/f1.jpg"></div>
+          </td>
+          <td>
+            <div><span>Cartoon Astronaut Shirt</span></div>
+          </td>
+          <td>
+            <div><span>₹1,250</span></div>
+          </td>
+          <td>
+            <div><input type="number" value="1" name="row1" id="row1" onchange=" subtotalfunction(this.value,this.name)"></div>
+          </td>
+          <td>
+            <div id="subtotalrow1">₹1250</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div i class="fa-regular fa-circle-xmark" style="color: #1e5cc8;cursor: pointer;"></i></div>
+          </td>
+          <td>
+            <div><img src="img/products/f2.jpg"></div>
+          </td>
+          <td>
+            <div><span>Cartoon Astronaut Shirt</span></div>
+          </td>
+          <td>
+            <div><span>₹1,250</span></div>
+          </td>
+          <td>
+            <div><input type="number" value="1" name="row2" id="row2" onchange=" subtotalfunction(this.value,this.name)"></div>
+          </td>
+          <td>
+            <div id="subtotalrow2">₹1250</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div><i class="fa-regular fa-circle-xmark" style="color: #1e5cc8;cursor: pointer;"></i></div>
+          </td>
+          <td>
+            <div><img src="img/products/f3.jpg"></div>
+          </td>
+          <td>
+            <div><span>Cartoon Astronaut Shirt</span></div>
+          </td>
+          <td>
+            <div><span>₹1,250</span></div>
+          </td>
+          <td>
+            <div><input type="number" value="1" name="row3" id="row3" onchange=" subtotalfunction(this.value,this.name)"></div>
+          </td>
+          <td>
+            <div id="subtotalrow3">₹1250</div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </section>
+  <section id="couponandtotal" class="section-p1">
+    <div id="coupon">
+      <h3>Apply Coupon</h3>
+      <div>
+        <input type="text" placeholder="Enter Coupon Code">
+        <button>Apply</button>
+      </div>
+    </div>
+    <div id="cart-total">
+      <p>**Free Delivery above 5000**</p>
+      <h3>Cart Total</h3>
+      <table>
+        <tr>
+          <td>Cart Subtotal</td>
+          <td id="subtotal">₹3750</td>
+        </tr>
+        <tr>
+          <td>Shipping Fee</td>
+          <td id="shippingfee">₹500</td>
+        </tr>
+        <tr>
+          <td><strong>Total</strong></td>
+          <td ><strong id="alltotal">₹4250</strong></td>
+        </tr>
+      </table>
+      <button >Proceed To Checkout</button>
+    </div>
+  </section>
+
+
+  <footer class="section-p1" style="border-top: 1px solid ;">
+    <div id="itemscont">
+      <div class="col">
+        <img src="logo images/ko-high-resolution-logo-transparent.png" id="logo">
+        <h4>Contact</h4>
+        <p><strong>Address: </strong> Sector 15, Part II Village Silokhera
+          Gurgaon 122001
+          India</p>
+        <p><strong>Phone: </strong> +91 9876543210/ (+91) 01 2345 6789</p>
+        <p><strong>Hours: </strong> 10:00 AM - 18:00 PM, Mon-Sat</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <a href="https://www.instagram.com/yourhonestbro/" target="_blank"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></i></a>
+            <a href="https://www.linkedin.com/in/rohit-verma-59799325a/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="col install">
+        <h4>Instal App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="img/pay/app.jpg">
+          <img src="img/pay/play.jpg">
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="img/pay/pay.png">
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2023 all rights reserved - K.O Fashion</p>
+    </div>
+  </footer>
+
+  <script src="script.js">
+  </script>
+  <script>
+    function values(input) {
+      let total = input.innerHTML
+      total = total.substr(1)
+      total = Number.parseInt(total)
+      return total;
+    }
+    function subtotalfunction(val, name) {
+      if(Number.parseInt(val) <0){
+        alert("invalid input")
+        document.getElementById(name).value = 0;
+      }
+      else{
+      let subtotal = document.getElementById('subtotal' + name)
+      let value = Number.parseInt(val) * 1250;
+      subtotal.innerHTML = `₹${value}`
+      let subtotal1 = document.getElementById('subtotalrow1')
+      let subtotal2 = document.getElementById('subtotalrow2')
+      let subtotal3 = document.getElementById('subtotalrow3')
+      subtotal1 = values(subtotal1) 
+      subtotal2 = values(subtotal2)
+      subtotal3 = values(subtotal3)
+      let carttotal = document.getElementById('subtotal')
+      carttotal.innerHTML = `₹${subtotal1 + subtotal2 + subtotal3}`
+      let shippingfee = document.getElementById('shippingfee')
+      let alltotal = document.getElementById('alltotal')
+      if(subtotal1 + subtotal2 + subtotal3>=5000 || subtotal1 + subtotal2 + subtotal3 == 0){
+        
+      shippingfee.innerHTML = `₹0`
+        alltotal.innerHTML = `₹${subtotal1 + subtotal2 + subtotal3}`
+      }
+      else{
+        shippingfee.innerHTML = `₹500`
+        alltotal.innerHTML = `₹${subtotal1 + subtotal2 + subtotal3+500}`
+      }
+    }
+    }
+  </script>
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
